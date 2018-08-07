@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">listview</string>
+
+    <string name="listButton">list按钮</string>
+
+
+    <string-array name="arrayStr">
+        <item>江西</item>
+        <item>广州</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>江西2</item>
+        <item>广州2</item>
+        <item>江西3</item>
+        <item>广州4</item>
+        <item>11</item>
+        <item>22</item>
+        <item>33</item>
+        <item>44</item>
+        <item>55</item>
+        <item>66</item>
+        <item>江西4</item>
+        <item>广州34</item>
+
+
+    </string-array>
+
+
+
+    <string-array name="arrayS">
+        <item>南昌英雄城</item>
+        <item>广州</item>
+        <item>北京</item>
+
+    </string-array>
+
+
+
+
+</resources>
