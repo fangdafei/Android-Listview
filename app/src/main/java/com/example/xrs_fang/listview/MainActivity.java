@@ -4,9 +4,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -39,6 +41,13 @@ public class MainActivity extends AppCompatActivity {
         SimpleAdapter simpleAdapter = new SimpleAdapter(this,getData(),R.layout.item_layout,from,to);
         listV.setAdapter(simpleAdapter);
 
+        //点击item
+        listV.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                Toast.makeText(MainActivity.this, getData().get(i).get("text").toString(), Toast.LENGTH_SHORT).show();
+            }
+        });
 
     }
 
